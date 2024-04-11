@@ -51,7 +51,7 @@
     <mj-body>
         <!-- mj-section needs padding: 0 -->
 
-        <!-- header with icons -->
+        <!-- navbar with icons -->
         <mj-section>
             <mj-column>
                 <mj-image align="left" src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="125px" alt="StudentUniverse" />
