@@ -37,7 +37,13 @@
             <!-- <mj-text font-family="Poppins, system-ui, sans-serif" /> -->
             <mj-text font-family="system-ui, sans-serif" />
             <mj-divider border-width="1px" border-color="lightgrey" />
-            <mj-button font-family="system-ui, sans-serif" background-color="#007c8a" border-radius="50px"></mj-button>
+            <mj-button font-family="system-ui, sans-serif" background-color="#007c8a" border-radius="50px" />
+            <mj-navbar-link color="#007c8a" text-transform="none" font-family="system-ui, sans-serif" />
+
+            <mj-accordion border="none" padding="1px" />
+            <mj-accordion-element icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png" icon-unwrapped-url="https://i.imgur.com/KKHenWa.png" icon-height="24px" icon-width="24px" />
+            <mj-accordion-title font-family="system-ui, sans-serif" padding="15px" font-size="16px" />
+            <mj-accordion-text font-family="system-ui, sans-serif" background-color="#007c8a" padding="15px" color="white" />
 
             <!-- classes: -->
             <mj-class name="white-text" color="white" />
@@ -52,12 +58,16 @@
         <!-- mj-section needs padding: 0 -->
 
         <!-- navbar with icons -->
-        <mj-section>
-            <mj-column>
-                <mj-image align="left" src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="125px" alt="StudentUniverse" />
+        <mj-section padding="0" background-color="white">
+            <mj-column width="50%" vertical-align="middle">
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="125px" alt="StudentUniverse" />
             </mj-column>
-            <mj-column>
-                <mj-text align="right">nav</mj-text>
+            <mj-column width="50%" vertical-align="middle">
+                <mj-navbar base-url="https://www.studentuniverse.com" hamburger="hamburger" ico-color="#007c8a">
+                    <mj-navbar-link href="#">link 1</mj-navbar-link>
+                    <mj-navbar-link href="#">link 2</mj-navbar-link>
+                    <mj-navbar-link href="#">link 3</mj-navbar-link>
+                    <mj-navbar-link href="#">link 4</mj-navbar-link>
             </mj-column>
         </mj-section>
 
@@ -131,7 +141,7 @@
         <!-- callout columns -->
         <mj-section background-color="#ff00a6" border-radius="15px">
             <mj-column background-color="transparent">
-                <mj-image src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" width="200px"></mj-image>
+                <mj-image src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" alt="Virgin Atlantic" width="200px"></mj-image>
             </mj-column>
             <mj-column background-color="transparent" inner-background-color="yellow" padding="0">
                 <mj-text font-size="18px">Lorem ipsum</mj-text>
@@ -164,14 +174,38 @@
             <mj-column>
                 <mj-text font-size="18px" align="center" css-class="primary-text">Lorem ipsum dolor</mj-text>
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
+            </mj-column>
+        </mj-section>
+
+        <!-- carousel -->
+        <mj-section>
+            <mj-column>
+                <mj-accordion>
+                    <mj-accordion-element>
+                        <mj-accordion-title>Lorem ipsum dolor sit amet</mj-accordion-title>
+                        <mj-accordion-text>
+                            <span style="line-height:20px">
+                            Etiam vitae odio nec dolor dignissim volutpat. Ut hendrerit sagittis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. In nec suscipit felis, id molestie mauris.
+                            </span>
+                        </mj-accordion-text>
+                    </mj-accordion-element>
+                    <mj-accordion-element>
+                        <mj-accordion-title>Nunc sit amet tristique lorem</mj-accordion-title>
+                        <mj-accordion-text>
+                            <span style="line-height:20px">
+                            Vestibulum tempus, lectus eu molestie aliquet, ante tellus viverra enim, in consequat libero mi eu ligula. Nam eget aliquam mauris, nec interdum quam. Aliquam a mauris imperdiet eros consequat ultricies id eget tellus.
+                            </span>
+                        </mj-accordion-text>
+                    </mj-accordion-element>
+                </mj-accordion>
             </mj-column>
         </mj-section>
 

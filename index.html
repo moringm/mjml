@@ -57,6 +57,13 @@
       .mj-outlook-group-fix { width:100% !important; }
     </style>
     <![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+  </style>
+  <!--<![endif]-->
   <style type="text/css">
     @media only screen and (min-width:480px) {
       .mj-column-per-50 {
@@ -104,6 +111,104 @@
       }
     }
 
+    noinput.mj-menu-checkbox {
+      display: block !important;
+      max-height: none !important;
+      visibility: visible !important;
+    }
+
+    @media only screen and (max-width:479px) {
+      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links {
+        display: none !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-inline-links,
+      .mj-menu-checkbox[type="checkbox"]~.mj-menu-trigger {
+        display: block !important;
+        max-width: none !important;
+        max-height: none !important;
+        font-size: inherit !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links>a {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-close {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-open {
+        display: none !important;
+      }
+    }
+
+    noinput.mj-accordion-checkbox {
+      display: block !important;
+    }
+
+    @media yahoo,
+    only screen and (min-width:0) {
+      .mj-accordion-element {
+        display: block;
+      }
+
+      input.mj-accordion-checkbox,
+      .mj-accordion-less {
+        display: none !important;
+      }
+
+      input.mj-accordion-checkbox+* .mj-accordion-title {
+        cursor: pointer;
+        touch-action: manipulation;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      input.mj-accordion-checkbox+* .mj-accordion-content {
+        overflow: hidden;
+        display: none;
+      }
+
+      input.mj-accordion-checkbox+* .mj-accordion-more {
+        display: block !important;
+      }
+
+      input.mj-accordion-checkbox:checked+* .mj-accordion-content {
+        display: block;
+      }
+
+      input.mj-accordion-checkbox:checked+* .mj-accordion-more {
+        display: none !important;
+      }
+
+      input.mj-accordion-checkbox:checked+* .mj-accordion-less {
+        display: block !important;
+      }
+    }
+
+    .moz-text-html input.mj-accordion-checkbox+* .mj-accordion-title {
+      cursor: auto;
+      touch-action: auto;
+      -webkit-user-select: auto;
+      -moz-user-select: auto;
+      user-select: auto;
+    }
+
+    .moz-text-html input.mj-accordion-checkbox+* .mj-accordion-content {
+      overflow: hidden;
+      display: block;
+    }
+
+    .moz-text-html input.mj-accordion-checkbox+* .mj-accordion-ico {
+      display: none;
+    }
+
+    @goodbye {
+      @gmail
+    }
+
   </style>
   <!-- <mj-style>
             .red-text div {
@@ -122,18 +227,18 @@
   <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">THIS IS PREVIEW TEXT</div>
   <div style="background-color:lightgrey;" lang="und" dir="auto">
     <!-- mj-section needs padding: 0 --><!-- navbar with icons -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="white" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:white;background-color:white;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:white;background-color:white;width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%">
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:middle;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                           <tbody>
                             <tr>
@@ -148,13 +253,30 @@
                   </tbody>
                 </table>
               </div>
-              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%">
+              <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:middle;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:right;color:#000000;">nav</div>
+                      <td align="center" style="font-size:0px;word-break:break-word;">
+                        <!--[if !mso]><!--><input type="checkbox" id="c71a3d45d54733f8" class="mj-menu-checkbox" style="display:none !important; max-height:0; visibility:hidden;"><!--<![endif]-->
+                        <div class="mj-menu-trigger" style="display:none;max-height:0px;max-width:0px;font-size:0px;overflow:hidden;">
+                          <label for="c71a3d45d54733f8" class="mj-menu-label" style="display:block;cursor:pointer;mso-hide:all;-moz-user-select:none;user-select:none;color:#007c8a;font-size:30px;font-family:Ubuntu, Helvetica, Arial, sans-serif;text-transform:uppercase;text-decoration:none;line-height:30px;padding:10px;" align="center">
+                            <span class="mj-menu-icon-open" style="mso-hide:all;"> &#9776; </span>
+                            <span class="mj-menu-icon-close" style="display:none;mso-hide:all;"> &#8855; </span>
+                          </label>
+                        </div>
+                        <div class="mj-inline-links" style>
+                          <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td style="padding:15px 10px;" class="" ><![endif]-->
+                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 1 </a>
+                          <!--[if mso | IE]></td><td style="padding:15px 10px;" class="" ><![endif]-->
+                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 2 </a>
+                          <!--[if mso | IE]></td><td style="padding:15px 10px;" class="" ><![endif]-->
+                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 3 </a>
+                          <!--[if mso | IE]></td><td style="padding:15px 10px;" class="" ><![endif]-->
+                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 4 </a>
+                          <!--[if mso | IE]></td></tr></table><![endif]-->
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -594,7 +716,7 @@
                           <tbody>
                             <tr>
                               <td style="width:200px;">
-                                <img alt src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto">
+                                <img alt="Virgin Atlantic" src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto">
                               </td>
                             </tr>
                           </tbody>
@@ -761,7 +883,7 @@
                     </tr>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
                       </td>
                     </tr>
                     <tr>
@@ -779,7 +901,7 @@
                     </tr>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
                       </td>
                     </tr>
                     <tr>
@@ -797,7 +919,7 @@
                     </tr>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
                       </td>
                     </tr>
                     <tr>
@@ -806,6 +928,97 @@
                         </p>
                         <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:550px;" role="presentation" width="550px" ><tr><td style="height:0;line-height:0;"> &nbsp;
 </td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- carousel -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="font-size:0px;padding:1px;word-break:break-word;">
+                        <table cellspacing="0" cellpadding="0" class="mj-accordion" style="width:100%;border-collapse:collapse;border:none;border-bottom:none;font-family:Ubuntu, Helvetica, Arial, sans-serif;">
+                          <tbody>
+                            <tr>
+                              <td style="padding:0px;">
+                                <label class="mj-accordion-element" style="font-size:13px;">
+                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;"><!--<![endif]-->
+                                  <div>
+                                    <div class="mj-accordion-title">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="width:100%;font-size:16px;font-family:system-ui, sans-serif;padding:15px;"> Lorem ipsum dolor sit amet </td>
+                                            <!--[if !mso | IE]><!-->
+                                            <td class="mj-accordion-ico" style="padding:16px;vertical-align:middle;"><img src="https://i.imgur.com/Xvw0vjq.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;"><img src="https://i.imgur.com/KKHenWa.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;"></td><!--<![endif]-->
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="mj-accordion-content">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="background:#007c8a;font-size:13px;font-family:system-ui, sans-serif;line-height:1;color:white;padding:15px;">
+                                              <span style="line-height:20px"> Etiam vitae odio nec dolor dignissim volutpat. Ut hendrerit sagittis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. In nec suscipit felis, id molestie mauris. </span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:0px;">
+                                <label class="mj-accordion-element" style="font-size:13px;">
+                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;"><!--<![endif]-->
+                                  <div>
+                                    <div class="mj-accordion-title">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="width:100%;font-size:16px;font-family:system-ui, sans-serif;padding:15px;"> Nunc sit amet tristique lorem </td>
+                                            <!--[if !mso | IE]><!-->
+                                            <td class="mj-accordion-ico" style="padding:16px;vertical-align:middle;"><img src="https://i.imgur.com/Xvw0vjq.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;"><img src="https://i.imgur.com/KKHenWa.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;"></td><!--<![endif]-->
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="mj-accordion-content">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="background:#007c8a;font-size:13px;font-family:system-ui, sans-serif;line-height:1;color:white;padding:15px;">
+                                              <span style="line-height:20px"> Vestibulum tempus, lectus eu molestie aliquet, ante tellus viverra enim, in consequat libero mi eu ligula. Nam eget aliquam mauris, nec interdum quam. Aliquam a mauris imperdiet eros consequat ultricies id eget tellus. </span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </label>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
