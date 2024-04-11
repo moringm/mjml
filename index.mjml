@@ -10,12 +10,13 @@
             </mj-selector>
         </mj-html-attributes>
 
-        <mj-style inline="inline">
+        <!-- <mj-style inline="inline">
             /* inline for gmail, but this is going to get bloated */
             .primary-text div {
                 color: #007c8a !important;
             }
-        </mj-style>
+        </mj-style> -->
+
         <!-- <mj-style>
             .red-text div {
                 color: red !important;
@@ -31,19 +32,18 @@
             <!-- <mj-breakpoint width="320px" /> -->
 
             <!-- element attributes: -->
-            <!-- <mj-all /> -->
+            <mj-all font-family="system-ui, sans-serif" line-height="20px" />
             <mj-body background-color="lightgrey" />
             <mj-column background-color="white" />
             <!-- <mj-text font-family="Poppins, system-ui, sans-serif" /> -->
-            <mj-text font-family="system-ui, sans-serif" />
+            <!-- <mj-text font-family="system-ui, sans-serif" /> -->
             <mj-divider border-width="1px" border-color="lightgrey" />
-            <mj-button font-family="system-ui, sans-serif" background-color="#007c8a" border-radius="50px" />
-            <mj-navbar-link color="#007c8a" text-transform="none" font-family="system-ui, sans-serif" />
-
+            <mj-button background-color="#007c8a" border-radius="50px" />
+            <mj-navbar-link color="#007c8a" text-transform="none" />
             <mj-accordion border="none" padding="1px" />
             <mj-accordion-element icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png" icon-unwrapped-url="https://i.imgur.com/KKHenWa.png" icon-height="24px" icon-width="24px" />
-            <mj-accordion-title font-family="system-ui, sans-serif" padding="15px" font-size="16px" />
-            <mj-accordion-text font-family="system-ui, sans-serif" background-color="#007c8a" padding="15px" color="white" />
+            <mj-accordion-title padding="25px" font-size="16px" />
+            <mj-accordion-text background-color="#007c8a" padding="25px" color="white" />
 
             <!-- classes: -->
             <mj-class name="white-text" color="white" />
@@ -63,7 +63,7 @@
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="125px" alt="StudentUniverse" />
             </mj-column>
             <mj-column width="50%" vertical-align="middle">
-                <mj-navbar base-url="https://www.studentuniverse.com" hamburger="hamburger" ico-color="#007c8a">
+                <mj-navbar hamburger="hamburger" ico-color="#007c8a">
                     <mj-navbar-link href="#">link 1</mj-navbar-link>
                     <mj-navbar-link href="#">link 2</mj-navbar-link>
                     <mj-navbar-link href="#">link 3</mj-navbar-link>
@@ -94,13 +94,13 @@
 
         <!-- grid -->
         <mj-section padding="0 0 15px 0">
-            <mj-column border-radius="15px">
+            <mj-column border-radius="15px" padding-bottom="20px">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" fluid-on-mobile="true" />
                 <mj-text font-size="18px">1Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
-            <mj-column border-radius="15px">
+            <mj-column border-radius="15px" padding-bottom="20px">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="BKK" fluid-on-mobile="true" />
                 <mj-text font-size="18px">2Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -109,13 +109,13 @@
         </mj-section>
 
         <mj-section padding="0 0 15px 0">
-            <mj-column border-radius="15px">
+            <mj-column border-radius="15px" padding-bottom="20px">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="CBR" fluid-on-mobile="true" />
                 <mj-text font-size="18px">3Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
-            <mj-column border-radius="15px">
+            <mj-column border-radius="15px" padding-bottom="20px">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="DUB" fluid-on-mobile="true" />
                 <mj-text font-size="18px">4Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -124,13 +124,13 @@
         </mj-section>
 
         <mj-section padding="0 0 15px 0">
-            <mj-column border-radius="15px">
+            <mj-column border-radius="15px" padding-bottom="20px">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="KEF" fluid-on-mobile="true" />
                 <mj-text font-size="18px">5Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
-            <mj-column border-radius="15px">
+            <mj-column border-radius="15px" padding-bottom="20px">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="ISB" fluid-on-mobile="true" />
                 <mj-text font-size="18px">6Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -160,32 +160,65 @@
             </mj-column>
         </mj-section>
 
-        <!-- pricepoint rows -->
-        <mj-section>
-            <mj-column>
-                <mj-text font-size="18px">Lorem ipsum dolor</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
-                <!-- need pricepoint row -->
+        <!-- <mj-section>
+            <mj-column background-color="transparent">
+                <mj-spacer height="1px" />
             </mj-column>
-        </mj-section>
+        </mj-section> -->
+
+        <!-- pricepoint rows -->
+        <mj-wrapper padding="15px" background-color="white" border-radius="15px">
+            <mj-section padding="0 0 10px 0">
+                <mj-column background-color="transparent" padding="0">
+                    <mj-text font-size="18px">Trending for Thanksgiving</mj-text>
+                    <mj-text>Here's some roundtrip domestic flights other travelers are eyeing.</mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column background-color="transparent" padding="0">
+                    <mj-table border="1px solid lightgrey">
+                        <tr style="border-bottom:1px solid lightgrey;">
+                            <td style="padding: 10px 15px 10px 10px;"><b>New York</b></td>
+                            <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$93</b>*</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid lightgrey;">
+                            <td style="padding: 10px 15px 10px 10px;"><b>Chicago</b></td>
+                            <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$165</b>*</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid lightgrey;">
+                            <td style="padding: 10px 15px 10px 10px;"><b>Los Angeles</b></td>
+                            <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$103</b>*</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid lightgrey;">
+                            <td style="padding: 10px 15px 10px 10px;"><b>Seattle</b></td>
+                            <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$178</b>*</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid lightgrey;">
+                            <td style="padding: 10px 15px 10px 10px;"><b>Boston</b></td>
+                            <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$18</b>*</td>
+                        </tr>
+                    </mj-table>
+                    </mj-table>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
 
         <!-- member perks -->
         <mj-section>
-            <mj-column>
+            <mj-column padding="20px 0 25px 0">
                 <mj-text font-size="18px" align="center" css-class="primary-text">Lorem ipsum dolor</mj-text>
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
-                <mj-divider />
+                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
             </mj-column>
         </mj-section>
 
-        <!-- carousel -->
+        <!-- accordion -->
         <mj-section>
             <mj-column>
                 <mj-accordion>
@@ -209,14 +242,26 @@
             </mj-column>
         </mj-section>
 
-        <!-- footer -->
-        <!-- get requirements from Doc -->
+        <!-- carousel -->
         <mj-section>
             <mj-column>
+                <mj-carousel padding="15px" border-radius="15px" tb-border-radius="10px" tb-selected-border-color="lightgreen" tb-hover-border-color="pink" tb-border="4px solid yellow">
+                    <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" alt="SFO" />
+                    <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" alt="BKK" />
+                    <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" alt="CBR" />
+                </mj-carousel>
+            </mj-column>
+        </mj-section>
+
+        <!-- footer -->
+        <!-- get requirements from Doc -->
+        <mj-section padding="0">
+            <mj-column padding="20px 0 30px 0">
                 <mj-social>
-                    <mj-social-element name="facebook"></mj-social-element>
-                    <mj-social-element name="twitter"></mj-social-element>
-                    <mj-social-element name="instagram"></mj-social-element>
+                    <mj-social-element name="facebook" name="Facebook" href="#"></mj-social-element>
+                    <mj-social-element name="x" name="X" href="#"></mj-social-element>
+                    <mj-social-element name="instagram" name="Instagram" href="#"></mj-social-element>
+                    <mj-social-element href="url" background-color="#FF00FF" src="#">Optional label</mj-social-element>
                 </mj-social>
                 <mj-text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
             </mj-column>

@@ -101,6 +101,109 @@
 
   </style>
   <style type="text/css">
+    .mj-carousel {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .mj-carousel-dc4461972e166f14-icons-cell {
+      display: table-cell !important;
+      width: 44px !important;
+    }
+
+    .mj-carousel-radio,
+    .mj-carousel-next,
+    .mj-carousel-previous {
+      display: none !important;
+    }
+
+    .mj-carousel-thumbnail,
+    .mj-carousel-next,
+    .mj-carousel-previous {
+      touch-action: manipulation;
+    }
+
+    .mj-carousel-dc4461972e166f14-radio:checked+.mj-carousel-content .mj-carousel-image,
+    .mj-carousel-dc4461972e166f14-radio:checked+*+.mj-carousel-content .mj-carousel-image,
+    .mj-carousel-dc4461972e166f14-radio:checked+*+*+.mj-carousel-content .mj-carousel-image {
+      display: none !important;
+    }
+
+    .mj-carousel-dc4461972e166f14-radio-1:checked+*+*+.mj-carousel-content .mj-carousel-image-1,
+    .mj-carousel-dc4461972e166f14-radio-2:checked+*+.mj-carousel-content .mj-carousel-image-2,
+    .mj-carousel-dc4461972e166f14-radio-3:checked+.mj-carousel-content .mj-carousel-image-3 {
+      display: block !important;
+    }
+
+    .mj-carousel-previous-icons,
+    .mj-carousel-next-icons,
+    .mj-carousel-dc4461972e166f14-radio-1:checked+*+*+.mj-carousel-content .mj-carousel-next-2,
+    .mj-carousel-dc4461972e166f14-radio-2:checked+*+.mj-carousel-content .mj-carousel-next-3,
+    .mj-carousel-dc4461972e166f14-radio-3:checked+.mj-carousel-content .mj-carousel-next-1,
+    .mj-carousel-dc4461972e166f14-radio-1:checked+*+*+.mj-carousel-content .mj-carousel-previous-3,
+    .mj-carousel-dc4461972e166f14-radio-2:checked+*+.mj-carousel-content .mj-carousel-previous-1,
+    .mj-carousel-dc4461972e166f14-radio-3:checked+.mj-carousel-content .mj-carousel-previous-2 {
+      display: block !important;
+    }
+
+    .mj-carousel-dc4461972e166f14-radio-1:checked+*+*+.mj-carousel-content .mj-carousel-dc4461972e166f14-thumbnail-1,
+    .mj-carousel-dc4461972e166f14-radio-2:checked+*+.mj-carousel-content .mj-carousel-dc4461972e166f14-thumbnail-2,
+    .mj-carousel-dc4461972e166f14-radio-3:checked+.mj-carousel-content .mj-carousel-dc4461972e166f14-thumbnail-3 {
+      border-color: lightgreen !important;
+    }
+
+    .mj-carousel-image img+div,
+    .mj-carousel-thumbnail img+div {
+      display: none !important;
+    }
+
+    .mj-carousel-dc4461972e166f14-thumbnail:hover+*+*+.mj-carousel-main .mj-carousel-image,
+    .mj-carousel-dc4461972e166f14-thumbnail:hover+*+.mj-carousel-main .mj-carousel-image,
+    .mj-carousel-dc4461972e166f14-thumbnail:hover+.mj-carousel-main .mj-carousel-image {
+      display: none !important;
+    }
+
+    .mj-carousel-thumbnail:hover {
+      border-color: pink !important;
+    }
+
+    .mj-carousel-dc4461972e166f14-thumbnail-1:hover+*+*+.mj-carousel-main .mj-carousel-image-1,
+    .mj-carousel-dc4461972e166f14-thumbnail-2:hover+*+.mj-carousel-main .mj-carousel-image-2,
+    .mj-carousel-dc4461972e166f14-thumbnail-3:hover+.mj-carousel-main .mj-carousel-image-3 {
+      display: block !important;
+    }
+
+    .mj-carousel noinput {
+      display: block !important;
+    }
+
+    .mj-carousel noinput .mj-carousel-image-1 {
+      display: block !important;
+    }
+
+    .mj-carousel noinput .mj-carousel-arrows,
+    .mj-carousel noinput .mj-carousel-thumbnails {
+      display: none !important;
+    }
+
+    [owa] .mj-carousel-thumbnail {
+      display: none !important;
+    }
+
+    @media screen yahoo {
+
+      .mj-carousel-dc4461972e166f14-icons-cell,
+      .mj-carousel-previous-icons,
+      .mj-carousel-next-icons {
+        display: none !important;
+      }
+
+      .mj-carousel-dc4461972e166f14-radio-1:checked+*+*+.mj-carousel-content .mj-carousel-dc4461972e166f14-thumbnail-1 {
+        border-color: transparent;
+      }
+    }
+
     @media only screen and (max-width:479px) {
       table.mj-full-width-mobile {
         width: 100% !important;
@@ -210,6 +313,12 @@
     }
 
   </style>
+  <!-- <mj-style inline="inline">
+            /* inline for gmail, but this is going to get bloated */
+            .primary-text div {
+                color: #007c8a !important;
+            }
+        </mj-style> -->
   <!-- <mj-style>
             .red-text div {
                 color: red !important;
@@ -243,7 +352,7 @@
                           <tbody>
                             <tr>
                               <td style="width:125px;">
-                                <img alt="StudentUniverse" src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="125" height="auto">
+                                <img alt="StudentUniverse" src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="125" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -259,22 +368,22 @@
                   <tbody>
                     <tr>
                       <td align="center" style="font-size:0px;word-break:break-word;">
-                        <!--[if !mso]><!--><input type="checkbox" id="c71a3d45d54733f8" class="mj-menu-checkbox" style="display:none !important; max-height:0; visibility:hidden;"><!--<![endif]-->
+                        <!--[if !mso]><!--><input type="checkbox" id="cbf63436e50b88b1" class="mj-menu-checkbox" style="display:none !important; max-height:0; visibility:hidden;" /><!--<![endif]-->
                         <div class="mj-menu-trigger" style="display:none;max-height:0px;max-width:0px;font-size:0px;overflow:hidden;">
-                          <label for="c71a3d45d54733f8" class="mj-menu-label" style="display:block;cursor:pointer;mso-hide:all;-moz-user-select:none;user-select:none;color:#007c8a;font-size:30px;font-family:Ubuntu, Helvetica, Arial, sans-serif;text-transform:uppercase;text-decoration:none;line-height:30px;padding:10px;" align="center">
+                          <label for="cbf63436e50b88b1" class="mj-menu-label" style="display:block;cursor:pointer;mso-hide:all;-moz-user-select:none;user-select:none;color:#007c8a;font-size:30px;font-family:Ubuntu, Helvetica, Arial, sans-serif;text-transform:uppercase;text-decoration:none;line-height:30px;padding:10px;" align="center">
                             <span class="mj-menu-icon-open" style="mso-hide:all;"> &#9776; </span>
                             <span class="mj-menu-icon-close" style="display:none;mso-hide:all;"> &#8855; </span>
                           </label>
                         </div>
-                        <div class="mj-inline-links" style>
+                        <div class="mj-inline-links" style="">
                           <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td style="padding:15px 10px;" class="" ><![endif]-->
-                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 1 </a>
+                          <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 1 </a>
                           <!--[if mso | IE]></td><td style="padding:15px 10px;" class="" ><![endif]-->
-                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 2 </a>
+                          <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 2 </a>
                           <!--[if mso | IE]></td><td style="padding:15px 10px;" class="" ><![endif]-->
-                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 3 </a>
+                          <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 3 </a>
                           <!--[if mso | IE]></td><td style="padding:15px 10px;" class="" ><![endif]-->
-                          <a class="mj-link" href="https://www.studentuniverse.com#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 4 </a>
+                          <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#007c8a;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;text-decoration:none;text-transform:none;padding:15px 10px;"> link 4 </a>
                           <!--[if mso | IE]></td></tr></table><![endif]-->
                         </div>
                       </td>
@@ -306,7 +415,7 @@
                           <tbody>
                             <tr>
                               <td style="width:160px;">
-                                <img alt="StudentUniverse" src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160" height="auto">
+                                <img alt="StudentUniverse" src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -329,20 +438,19 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr style="vertical-align:top;">
-            <td style="width:0.01%;padding-bottom:100%;mso-padding-bottom-alt:0;">
-            </td>
+            <td style="width:0.01%;padding-bottom:100%;mso-padding-bottom-alt:0;" />
             <td background="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/homepage/promotion/feature_fiji-mar24-min992.jpg" style="background:teal url('https://images.studentuniverse.com/new/suwebui/photos/marketing-us/homepage/promotion/feature_fiji-mar24-min992.jpg') no-repeat center center / cover;background-position:center center;background-repeat:no-repeat;padding:50px 0px;vertical-align:top;">
               <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600" ><tr><td style=""><![endif]-->
               <div class="mj-hero-content" style="margin:0px auto;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
                   <tbody>
                     <tr>
-                      <td style>
+                      <td style="">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
                           <tbody>
                             <tr>
                               <td align="center" class="hero-attr" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:system-ui, sans-serif;font-size:56px;line-height:1;text-align:center;color:white;" data-id="hero-attr">Lorem ipsum dolor</div>
+                                <div style="font-family:system-ui, sans-serif;font-size:56px;line-height:20px;text-align:center;color:white;" data-id="hero-attr">Lorem ipsum dolor</div>
                               </td>
                             </tr>
                           </tbody>
@@ -354,8 +462,7 @@
               </div>
               <!--[if mso | IE]></td></tr></table><![endif]-->
             </td>
-            <td style="width:0.01%;padding-bottom:100%;mso-padding-bottom-alt:0;">
-            </td>
+            <td style="width:0.01%;padding-bottom:100%;mso-padding-bottom-alt:0;" />
           </tr>
         </tbody>
       </table>
@@ -372,12 +479,12 @@
                   <tbody>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor</div>
                       </td>
                     </tr>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                       </td>
                     </tr>
                     <tr>
@@ -386,7 +493,7 @@
                           <tbody>
                             <tr>
                               <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:26px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:26px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
                               </td>
                             </tr>
                           </tbody>
@@ -412,38 +519,46 @@
             <td style="direction:ltr;font-size:0px;padding:0 0 15px 0;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;border-radius:15px;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                      <td style="background-color:white;border-radius:15px;vertical-align:top;padding-bottom:20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" class="mj-full-width-mobile">
-                                <img alt="SFO" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+                              <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:300px;" class="mj-full-width-mobile">
+                                        <img alt="SFO" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">1Lorem ipsum</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                          <tbody>
                             <tr>
-                              <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">1Lorem ipsum</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
@@ -455,38 +570,46 @@
               </div>
               <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;border-radius:15px;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                      <td style="background-color:white;border-radius:15px;vertical-align:top;padding-bottom:20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" class="mj-full-width-mobile">
-                                <img alt="BKK" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+                              <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:300px;" class="mj-full-width-mobile">
+                                        <img alt="BKK" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">2Lorem ipsum</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                          <tbody>
                             <tr>
-                              <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">2Lorem ipsum</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
@@ -510,38 +633,46 @@
             <td style="direction:ltr;font-size:0px;padding:0 0 15px 0;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;border-radius:15px;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                      <td style="background-color:white;border-radius:15px;vertical-align:top;padding-bottom:20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" class="mj-full-width-mobile">
-                                <img alt="CBR" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+                              <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:300px;" class="mj-full-width-mobile">
+                                        <img alt="CBR" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">3Lorem ipsum</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                          <tbody>
                             <tr>
-                              <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">3Lorem ipsum</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
@@ -553,38 +684,46 @@
               </div>
               <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;border-radius:15px;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                      <td style="background-color:white;border-radius:15px;vertical-align:top;padding-bottom:20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" class="mj-full-width-mobile">
-                                <img alt="DUB" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+                              <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:300px;" class="mj-full-width-mobile">
+                                        <img alt="DUB" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">4Lorem ipsum</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                          <tbody>
                             <tr>
-                              <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">4Lorem ipsum</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
@@ -608,38 +747,46 @@
             <td style="direction:ltr;font-size:0px;padding:0 0 15px 0;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;border-radius:15px;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                      <td style="background-color:white;border-radius:15px;vertical-align:top;padding-bottom:20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" class="mj-full-width-mobile">
-                                <img alt="KEF" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+                              <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:300px;" class="mj-full-width-mobile">
+                                        <img alt="KEF" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">5Lorem ipsum</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                          <tbody>
                             <tr>
-                              <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">5Lorem ipsum</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
@@ -651,38 +798,46 @@
               </div>
               <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;border-radius:15px;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                      <td style="background-color:white;border-radius:15px;vertical-align:top;padding-bottom:20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" class="mj-full-width-mobile">
-                                <img alt="ISB" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+                              <td align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:300px;" class="mj-full-width-mobile">
+                                        <img alt="ISB" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" style="border:0;border-radius:15px 15px 0 0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">6Lorem ipsum</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                          <tbody>
                             <tr>
-                              <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">6Lorem ipsum</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
@@ -716,7 +871,7 @@
                           <tbody>
                             <tr>
                               <td style="width:200px;">
-                                <img alt="Virgin Atlantic" src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto">
+                                <img alt="Virgin Atlantic" src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -736,12 +891,12 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">Lorem ipsum</div>
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum</div>
                               </td>
                             </tr>
                             <tr>
                               <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                               </td>
                             </tr>
                             <tr>
@@ -750,7 +905,7 @@
                                   <tbody>
                                     <tr>
                                       <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
+                                        <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Sed tristique </a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -788,7 +943,7 @@
                           <tbody>
                             <tr>
                               <td style="width:100px;">
-                                <img alt src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/HKG.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100" height="auto">
+                                <img alt="" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/HKG.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -797,12 +952,12 @@
                     </tr>
                     <tr>
                       <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:center;color:#000000;">Lorem ipsum dolor</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:center;color:#000000;">Lorem ipsum dolor</div>
                       </td>
                     </tr>
                     <tr>
                       <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:center;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:center;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                       </td>
                     </tr>
                     <tr>
@@ -811,7 +966,7 @@
                           <tbody>
                             <tr>
                               <td align="center" bgcolor="#007c8a" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:10px 25px;background:#007c8a;" valign="middle">
-                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Maecenas semper </a>
+                                <a href="#" style="display:inline-block;background:#007c8a;color:#ffffff;font-family:system-ui, sans-serif;font-size:13px;font-weight:normal;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:50px;" target="_blank"> Maecenas semper </a>
                               </td>
                             </tr>
                           </tbody>
@@ -828,32 +983,108 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- pricepoint rows -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+    <!-- <mj-section>
+            <mj-column background-color="transparent">
+                <mj-spacer height="1px" />
+            </mj-column>
+        </mj-section> --><!-- pricepoint rows -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="white" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:white;background-color:white;margin:0px auto;border-radius:15px;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:white;background-color:white;width:100%;border-radius:15px;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%">
+            <td style="direction:ltr;font-size:0px;padding:15px;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:570px;" width="570" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:570px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                   <tbody>
                     <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:1;text-align:left;color:#000000;">Lorem ipsum dolor</div>
+                      <td style="direction:ltr;font-size:0px;padding:0 0 10px 0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:570px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="background-color:transparent;vertical-align:top;padding:0;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                          <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#000000;">Trending for Thanksgiving</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                          <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Here's some roundtrip domestic flights other travelers are eyeing.</div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
                       </td>
                     </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
-                      </td>
-                    </tr>
-                    <!-- need pricepoint row -->
                   </tbody>
                 </table>
               </div>
-              <!--[if mso | IE]></td></tr></table><![endif]-->
+              <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:570px;" width="570" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:570px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:570px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="background-color:transparent;vertical-align:top;padding:0;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                          <table cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#000000;font-family:system-ui, sans-serif;font-size:13px;line-height:20px;table-layout:auto;width:100%;border:1px solid lightgrey;">
+                                            <tr style="border-bottom:1px solid lightgrey;">
+                                              <td style="padding: 10px 15px 10px 10px;"><b>New York</b></td>
+                                              <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$93</b>*</td>
+                                            </tr>
+                                            <tr style="border-bottom:1px solid lightgrey;">
+                                              <td style="padding: 10px 15px 10px 10px;"><b>Chicago</b></td>
+                                              <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$165</b>*</td>
+                                            </tr>
+                                            <tr style="border-bottom:1px solid lightgrey;">
+                                              <td style="padding: 10px 15px 10px 10px;"><b>Los Angeles</b></td>
+                                              <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$103</b>*</td>
+                                            </tr>
+                                            <tr style="border-bottom:1px solid lightgrey;">
+                                              <td style="padding: 10px 15px 10px 10px;"><b>Seattle</b></td>
+                                              <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$178</b>*</td>
+                                            </tr>
+                                            <tr style="border-bottom:1px solid lightgrey;">
+                                              <td style="padding: 10px 15px 10px 10px;"><b>Boston</b></td>
+                                              <td style="padding: 10px 10px 10px 15px" align="right">Flights from <b>$18</b>*</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
             </td>
           </tr>
         </tbody>
@@ -869,65 +1100,65 @@
             <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" class="primary-text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family: system-ui, sans-serif; font-size: 18px; line-height: 1; text-align: center; color: #007c8a;">Lorem ipsum dolor</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:16px;line-height:1;text-align:left;color:#000000;">Nam sodales efficitur dapibus</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <p style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:100%;">
-                        </p>
-                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:550px;" role="presentation" width="550px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+                      <td style="background-color:white;vertical-align:top;padding:20px 0 25px 0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" class="primary-text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:18px;line-height:20px;text-align:center;color:#000000;">Lorem ipsum dolor</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:16px;line-height:20px;text-align:left;color:#000000;">Nam sodales efficitur dapibus</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <p style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:100%;">
+                                </p>
+                                <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:550px;" role="presentation" width="550px" ><tr><td style="height:0;line-height:0;"> &nbsp;
 </td></tr></table><![endif]-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:16px;line-height:1;text-align:left;color:#000000;">Nam sodales efficitur dapibus</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <p style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:100%;">
-                        </p>
-                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:550px;" role="presentation" width="550px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:16px;line-height:20px;text-align:left;color:#000000;">Nam sodales efficitur dapibus</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <p style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:100%;">
+                                </p>
+                                <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:550px;" role="presentation" width="550px" ><tr><td style="height:0;line-height:0;"> &nbsp;
 </td></tr></table><![endif]-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:16px;line-height:1;text-align:left;color:#000000;">Nam sodales efficitur dapibus</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <p style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:100%;">
-                        </p>
-                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1px;margin:0px auto;width:550px;" role="presentation" width="550px" ><tr><td style="height:0;line-height:0;"> &nbsp;
-</td></tr></table><![endif]-->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:16px;line-height:20px;text-align:left;color:#000000;">Nam sodales efficitur dapibus</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#000000;">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -940,7 +1171,7 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- carousel -->
+    <!-- accordion -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
@@ -953,20 +1184,20 @@
                   <tbody>
                     <tr>
                       <td style="font-size:0px;padding:1px;word-break:break-word;">
-                        <table cellspacing="0" cellpadding="0" class="mj-accordion" style="width:100%;border-collapse:collapse;border:none;border-bottom:none;font-family:Ubuntu, Helvetica, Arial, sans-serif;">
+                        <table cellspacing="0" cellpadding="0" class="mj-accordion" style="width:100%;border-collapse:collapse;border:none;border-bottom:none;font-family:system-ui, sans-serif;">
                           <tbody>
                             <tr>
                               <td style="padding:0px;">
-                                <label class="mj-accordion-element" style="font-size:13px;">
-                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;"><!--<![endif]-->
+                                <label class="mj-accordion-element" style="font-size:13px;font-family:system-ui, sans-serif;">
+                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;" /><!--<![endif]-->
                                   <div>
                                     <div class="mj-accordion-title">
                                       <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
                                         <tbody>
                                           <tr>
-                                            <td style="width:100%;font-size:16px;font-family:system-ui, sans-serif;padding:15px;"> Lorem ipsum dolor sit amet </td>
+                                            <td style="width:100%;font-size:16px;font-family:system-ui, sans-serif;padding:25px;"> Lorem ipsum dolor sit amet </td>
                                             <!--[if !mso | IE]><!-->
-                                            <td class="mj-accordion-ico" style="padding:16px;vertical-align:middle;"><img src="https://i.imgur.com/Xvw0vjq.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;"><img src="https://i.imgur.com/KKHenWa.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;"></td><!--<![endif]-->
+                                            <td class="mj-accordion-ico" style="padding:16px;vertical-align:middle;"><img src="https://i.imgur.com/Xvw0vjq.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;" /><img src="https://i.imgur.com/KKHenWa.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;" /></td><!--<![endif]-->
                                           </tr>
                                         </tbody>
                                       </table>
@@ -975,7 +1206,7 @@
                                       <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
                                         <tbody>
                                           <tr>
-                                            <td style="background:#007c8a;font-size:13px;font-family:system-ui, sans-serif;line-height:1;color:white;padding:15px;">
+                                            <td style="background:#007c8a;font-size:13px;font-family:system-ui, sans-serif;line-height:20px;color:white;padding:25px;">
                                               <span style="line-height:20px"> Etiam vitae odio nec dolor dignissim volutpat. Ut hendrerit sagittis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. In nec suscipit felis, id molestie mauris. </span>
                                             </td>
                                           </tr>
@@ -988,16 +1219,16 @@
                             </tr>
                             <tr>
                               <td style="padding:0px;">
-                                <label class="mj-accordion-element" style="font-size:13px;">
-                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;"><!--<![endif]-->
+                                <label class="mj-accordion-element" style="font-size:13px;font-family:system-ui, sans-serif;">
+                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;" /><!--<![endif]-->
                                   <div>
                                     <div class="mj-accordion-title">
                                       <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
                                         <tbody>
                                           <tr>
-                                            <td style="width:100%;font-size:16px;font-family:system-ui, sans-serif;padding:15px;"> Nunc sit amet tristique lorem </td>
+                                            <td style="width:100%;font-size:16px;font-family:system-ui, sans-serif;padding:25px;"> Nunc sit amet tristique lorem </td>
                                             <!--[if !mso | IE]><!-->
-                                            <td class="mj-accordion-ico" style="padding:16px;vertical-align:middle;"><img src="https://i.imgur.com/Xvw0vjq.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;"><img src="https://i.imgur.com/KKHenWa.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;"></td><!--<![endif]-->
+                                            <td class="mj-accordion-ico" style="padding:16px;vertical-align:middle;"><img src="https://i.imgur.com/Xvw0vjq.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;" /><img src="https://i.imgur.com/KKHenWa.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;" /></td><!--<![endif]-->
                                           </tr>
                                         </tbody>
                                       </table>
@@ -1006,7 +1237,7 @@
                                       <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
                                         <tbody>
                                           <tr>
-                                            <td style="background:#007c8a;font-size:13px;font-family:system-ui, sans-serif;line-height:1;color:white;padding:15px;">
+                                            <td style="background:#007c8a;font-size:13px;font-family:system-ui, sans-serif;line-height:20px;color:white;padding:25px;">
                                               <span style="line-height:20px"> Vestibulum tempus, lectus eu molestie aliquet, ante tellus viverra enim, in consequat libero mi eu ligula. Nam eget aliquam mauris, nec interdum quam. Aliquam a mauris imperdiet eros consequat ultricies id eget tellus. </span>
                                             </td>
                                           </tr>
@@ -1031,7 +1262,7 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- footer --><!-- get requirements from Doc -->
+    <!-- carousel -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
@@ -1043,67 +1274,154 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
-                          <tbody>
-                            <tr>
-                              <td style="padding:4px;vertical-align:middle;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3b5998;border-radius:3px;width:20px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
-                                        <img alt height="20" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png" style="border-radius:3px;display:block;" width="20">
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <!--[if mso | IE]></td><td><![endif]-->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
-                          <tbody>
-                            <tr>
-                              <td style="padding:4px;vertical-align:middle;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#55acee;border-radius:3px;width:20px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
-                                        <img alt height="20" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png" style="border-radius:3px;display:block;" width="20">
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <!--[if mso | IE]></td><td><![endif]-->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
-                          <tbody>
-                            <tr>
-                              <td style="padding:4px;vertical-align:middle;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3f729b;border-radius:3px;width:20px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
-                                        <img alt height="20" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png" style="border-radius:3px;display:block;" width="20">
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      <td align="center" style="font-size:0px;padding:15px;word-break:break-word;">
+                        <!--[if !mso]><!-->
+                        <div class="mj-carousel"><input class="mj-carousel-radio mj-carousel-dc4461972e166f14-radio mj-carousel-dc4461972e166f14-radio-1" checked="checked" type="radio" name="mj-carousel-radio-dc4461972e166f14" id="mj-carousel-dc4461972e166f14-radio-1" style="display:none;mso-hide:all;" /><input class="mj-carousel-radio mj-carousel-dc4461972e166f14-radio mj-carousel-dc4461972e166f14-radio-2" type="radio" name="mj-carousel-radio-dc4461972e166f14" id="mj-carousel-dc4461972e166f14-radio-2" style="display:none;mso-hide:all;" /><input class="mj-carousel-radio mj-carousel-dc4461972e166f14-radio mj-carousel-dc4461972e166f14-radio-3" type="radio" name="mj-carousel-radio-dc4461972e166f14" id="mj-carousel-dc4461972e166f14-radio-3" style="display:none;mso-hide:all;" />
+                          <div class="mj-carousel-content mj-carousel-dc4461972e166f14-content" style="display:table;width:100%;table-layout:fixed;text-align:center;font-size:0px;"><a style="border:4px solid yellow;border-radius:10px;display:inline-block;overflow:hidden;width:110px;" href="#1" target="_blank" class="mj-carousel-thumbnail mj-carousel-dc4461972e166f14-thumbnail mj-carousel-dc4461972e166f14-thumbnail-1 "><label for="mj-carousel-dc4461972e166f14-radio-1"><img style="display:block;width:100%;height:auto;" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" alt="SFO" width="110" /></label></a><a style="border:4px solid yellow;border-radius:10px;display:inline-block;overflow:hidden;width:110px;" href="#2" target="_blank" class="mj-carousel-thumbnail mj-carousel-dc4461972e166f14-thumbnail mj-carousel-dc4461972e166f14-thumbnail-2 "><label for="mj-carousel-dc4461972e166f14-radio-2"><img style="display:block;width:100%;height:auto;" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" alt="BKK" width="110" /></label></a><a style="border:4px solid yellow;border-radius:10px;display:inline-block;overflow:hidden;width:110px;" href="#3" target="_blank" class="mj-carousel-thumbnail mj-carousel-dc4461972e166f14-thumbnail mj-carousel-dc4461972e166f14-thumbnail-3 "><label for="mj-carousel-dc4461972e166f14-radio-3"><img style="display:block;width:100%;height:auto;" src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" alt="CBR" width="110" /></label></a>
+                            <table style="caption-side:top;display:table-caption;table-layout:fixed;width:100%;" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="mj-carousel-main">
+                              <tbody>
+                                <tr>
+                                  <td class="mj-carousel-dc4461972e166f14-icons-cell" style="font-size:0px;display:none;mso-hide:all;padding:0px;">
+                                    <div class="mj-carousel-previous-icons" style="display:none;mso-hide:all;"><label for="mj-carousel-dc4461972e166f14-radio-1" class="mj-carousel-previous mj-carousel-previous-1"><img src="https://i.imgur.com/xTh3hln.png" alt="previous" style="display:block;width:44px;height:auto;" width="44" /></label><label for="mj-carousel-dc4461972e166f14-radio-2" class="mj-carousel-previous mj-carousel-previous-2"><img src="https://i.imgur.com/xTh3hln.png" alt="previous" style="display:block;width:44px;height:auto;" width="44" /></label><label for="mj-carousel-dc4461972e166f14-radio-3" class="mj-carousel-previous mj-carousel-previous-3"><img src="https://i.imgur.com/xTh3hln.png" alt="previous" style="display:block;width:44px;height:auto;" width="44" /></label></div>
+                                  </td>
+                                  <td style="padding:0px;">
+                                    <div class="mj-carousel-images">
+                                      <div class="mj-carousel-image mj-carousel-image-1 " style=""><img src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" alt="SFO" style="border-radius:15px;display:block;width:600px;max-width:100%;height:auto;" width="600" border="0" /></div>
+                                      <div class="mj-carousel-image mj-carousel-image-2 " style="display:none;mso-hide:all;"><img src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" alt="BKK" style="border-radius:15px;display:block;width:600px;max-width:100%;height:auto;" width="600" border="0" /></div>
+                                      <div class="mj-carousel-image mj-carousel-image-3 " style="display:none;mso-hide:all;"><img src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" alt="CBR" style="border-radius:15px;display:block;width:600px;max-width:100%;height:auto;" width="600" border="0" /></div>
+                                    </div>
+                                  </td>
+                                  <td class="mj-carousel-dc4461972e166f14-icons-cell" style="font-size:0px;display:none;mso-hide:all;padding:0px;">
+                                    <div class="mj-carousel-next-icons" style="display:none;mso-hide:all;"><label for="mj-carousel-dc4461972e166f14-radio-1" class="mj-carousel-next mj-carousel-next-1"><img src="https://i.imgur.com/os7o9kz.png" alt="next" style="display:block;width:44px;height:auto;" width="44" /></label><label for="mj-carousel-dc4461972e166f14-radio-2" class="mj-carousel-next mj-carousel-next-2"><img src="https://i.imgur.com/os7o9kz.png" alt="next" style="display:block;width:44px;height:auto;" width="44" /></label><label for="mj-carousel-dc4461972e166f14-radio-3" class="mj-carousel-next mj-carousel-next-3"><img src="https://i.imgur.com/os7o9kz.png" alt="next" style="display:block;width:44px;height:auto;" width="44" /></label></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div><!--<![endif]-->
+                        <!--[if mso]><div class="mj-carousel-image mj-carousel-image-1 " style="" ><img src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" alt="SFO" style="border-radius:15px;display:block;width:600px;max-width:100%;height:auto;" width="600" border="0" /></div><![endif]-->
                       </td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- footer --><!-- get requirements from Doc -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:1;text-align:center;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                      <td style="background-color:white;vertical-align:top;padding:20px 0 30px 0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:4px;vertical-align:middle;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3b5998;border-radius:3px;width:20px;">
+                                          <tbody>
+                                            <tr>
+                                              <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank">
+                                                  <img alt="" height="20" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png" style="border-radius:3px;display:block;" width="20" />
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso | IE]></td><td><![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:4px;vertical-align:middle;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;border-radius:3px;width:20px;">
+                                          <tbody>
+                                            <tr>
+                                              <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
+                                                <a href="https://twitter.com/intent/tweet?url=#" target="_blank">
+                                                  <img alt="" height="20" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter-x.png" style="border-radius:3px;display:block;" width="20" />
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso | IE]></td><td><![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:4px;vertical-align:middle;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3f729b;border-radius:3px;width:20px;">
+                                          <tbody>
+                                            <tr>
+                                              <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
+                                                <a href="#" target="_blank">
+                                                  <img alt="" height="20" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png" style="border-radius:3px;display:block;" width="20" />
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso | IE]></td><td><![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:4px;vertical-align:middle;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FF00FF;border-radius:3px;width:20px;">
+                                          <tbody>
+                                            <tr>
+                                              <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
+                                                <a href="url" target="_blank">
+                                                  <img alt="" height="20" src="#" style="border-radius:3px;display:block;" width="20" />
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td style="vertical-align:middle;padding:4px 4px 4px 0;">
+                                        <a href="url" style="color:#333333;font-size:13px;font-family:system-ui, sans-serif;line-height:20px;text-decoration:none;" target="_blank"> Optional label </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:system-ui, sans-serif;font-size:13px;line-height:20px;text-align:center;color:#000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
