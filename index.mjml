@@ -85,29 +85,14 @@
         <!-- grid -->
         <mj-section padding="0 0 15px 0">
             <mj-column border-radius="15px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" />
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" fluid-on-mobile="true" />
+                <mj-text font-size="18px">1Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
             <mj-column border-radius="15px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" width="100px"></mj-image>
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
-                <mj-button href="#">Sed tristique</mj-button>
-            </mj-column>
-        </mj-section>
-
-        <mj-section padding="0 0 15px 0">
-            <mj-column border-radius="15px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" width="100px"></mj-image>
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
-                <mj-button href="#">Sed tristique</mj-button>
-            </mj-column>
-            <mj-column border-radius="15px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" width="100px"></mj-image>
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="BKK" fluid-on-mobile="true" />
+                <mj-text font-size="18px">2Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
@@ -115,14 +100,29 @@
 
         <mj-section padding="0 0 15px 0">
             <mj-column border-radius="15px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" width="100px"></mj-image>
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="CBR" fluid-on-mobile="true" />
+                <mj-text font-size="18px">3Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
             <mj-column border-radius="15px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" width="100px"></mj-image>
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="DUB" fluid-on-mobile="true" />
+                <mj-text font-size="18px">4Lorem ipsum</mj-text>
+                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-button href="#">Sed tristique</mj-button>
+            </mj-column>
+        </mj-section>
+
+        <mj-section padding="0 0 15px 0">
+            <mj-column border-radius="15px">
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="KEF" fluid-on-mobile="true" />
+                <mj-text font-size="18px">5Lorem ipsum</mj-text>
+                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-button href="#">Sed tristique</mj-button>
+            </mj-column>
+            <mj-column border-radius="15px">
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="ISB" fluid-on-mobile="true" />
+                <mj-text font-size="18px">6Lorem ipsum</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
