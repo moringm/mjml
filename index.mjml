@@ -10,26 +10,11 @@
             </mj-selector>
         </mj-html-attributes>
 
-        <!-- <mj-style inline="inline">
-            /* inline for gmail, but this is going to get bloated */
-            .primary-text div {
-                color: #007c8a !important;
-            }
-        </mj-style> -->
-
         <mj-style>
-            @media (min-width: 480px) {
-                .grid-padding .mj-column-per-50 {
-                    width: calc(50% - 7px) !important;
-                }
-                .grid-padding .mj-column-per-50:nth-of-type(1) {
-                    padding-right: 7px;
-                }
-                .grid-padding .mj-column-per-50:nth-of-type(2) {
-                    padding-left: 7px;
-                }
+            .grid-background > table > tbody > tr > td > table {
+                background-color: white;
+                border-radius: 15px;
             }
-            .grid-padding {}
         </mj-style>
 
         <!-- custom font -->
@@ -40,16 +25,16 @@
             <!-- <mj-breakpoint width="320px" /> -->
 
             <!-- element attributes: -->
-            <mj-all font-family="system-ui, sans-serif" line-height="20px" />
+            <mj-all font-family="system-ui, sans-serif" />
             <mj-body background-color="lightgrey" />
-            <mj-column background-color="white" />
+            <!-- <mj-column background-color="white" /> -->
             <!-- <mj-text font-family="Poppins, system-ui, sans-serif" /> -->
             <!-- <mj-text font-family="system-ui, sans-serif" /> -->
             <mj-divider border-width="1px" border-color="lightgrey" />
             <mj-button background-color="#007c8a" border-radius="50px" />
             <mj-navbar-link color="#007c8a" text-transform="none" />
             <mj-accordion border="none" padding="1px" />
-            <mj-accordion-element icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png" icon-unwrapped-url="https://i.imgur.com/KKHenWa.png" icon-height="24px" icon-width="24px" />
+            <mj-accordion-element icon-wrapped-url="https://upload.wikimedia.org/wikipedia/commons/3/3a/Up_arrow.gif" icon-unwrapped-url="https://upload.wikimedia.org/wikipedia/commons/d/db/Vector_down_arrow_link.svg" icon-height="24px" icon-width="24px" />
             <mj-accordion-title padding="25px" font-size="16px" />
             <mj-accordion-text background-color="#007c8a" padding="25px" color="white" />
 
@@ -101,48 +86,54 @@
         </mj-section>
 
         <!-- grid -->
-        <mj-section padding="0 0 15px 0" css-class="grid-padding">
-            <mj-column border-radius="15px" padding-bottom="20px">
+        <mj-section padding="0">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" fluid-on-mobile="true" />
-                <mj-text font-size="18px">1Lorem ipsum</mj-text>
+                <mj-text font-size="18px">Grid 1</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
+                <mj-spacer height="20px" />
             </mj-column>
-            <mj-column border-radius="15px" padding-bottom="20px">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="BKK" fluid-on-mobile="true" />
-                <mj-text font-size="18px">2Lorem ipsum</mj-text>
+                <mj-text font-size="18px">Grid 2</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
+                <mj-spacer height="20px" />
             </mj-column>
         </mj-section>
 
-        <mj-section padding="0 0 15px 0" css-class="grid-padding">
-            <mj-column border-radius="15px" padding-bottom="20px">
+        <mj-section padding="0">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="CBR" fluid-on-mobile="true" />
-                <mj-text font-size="18px">3Lorem ipsum</mj-text>
+                <mj-text font-size="18px">Grid 3</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
+                <mj-spacer height="20px" />
             </mj-column>
-            <mj-column border-radius="15px" padding-bottom="20px">
+            <mj-column padding="0 10px 20px 10px"css-class="grid-background">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="DUB" fluid-on-mobile="true" />
-                <mj-text font-size="18px">4Lorem ipsum</mj-text>
+                <mj-text font-size="18px">Grid 4</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
+                <mj-spacer height="20px" />
             </mj-column>
         </mj-section>
 
-        <mj-section padding="0 0 15px 0" css-class="grid-padding">
-            <mj-column border-radius="15px" padding-bottom="20px">
+        <mj-section padding="0">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="KEF" fluid-on-mobile="true" />
-                <mj-text font-size="18px">5Lorem ipsum</mj-text>
+                <mj-text font-size="18px">Grid 5</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
+                <mj-spacer height="20px" />
             </mj-column>
-            <mj-column border-radius="15px" padding-bottom="20px">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="ISB" fluid-on-mobile="true" />
-                <mj-text font-size="18px">6Lorem ipsum</mj-text>
+                <mj-text font-size="18px">Grid 6</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
+                <mj-spacer height="20px" />
             </mj-column>
         </mj-section>
 
@@ -253,7 +244,7 @@
         <!-- carousel -->
         <mj-section>
             <mj-column>
-                <mj-carousel padding="15px" border-radius="15px" tb-border-radius="10px" tb-selected-border-color="lightgreen" tb-hover-border-color="pink" tb-border="4px solid yellow">
+                <mj-carousel padding="15px" border-radius="15px" tb-border-radius="10px" tb-selected-border-color="lightgreen" tb-hover-border-color="pink" tb-border="4px solid yellow" left-icon="https://upload.wikimedia.org/wikipedia/commons/b/bd/Left_arrow_icon.svg" right-icon="https://upload.wikimedia.org/wikipedia/commons/3/39/Vector_right_arrow_link.svg">
                     <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" alt="SFO" />
                     <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" alt="BKK" />
                     <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" alt="CBR" />
