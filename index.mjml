@@ -1,17 +1,10 @@
-<mjml>
+<mjml lang="en">
     <mj-head>
         <mj-title>StudentUniverse: Title Here</mj-title>
         <mj-preview>THIS IS PREVIEW TEXT</mj-preview>
 
-        <mj-html-attributes>
-            <mj-selector path=".hero-attr div">
-                <!-- sets a `data-id="hero-attr"` attribute... may be useful -->
-                <mj-html-attribute name="data-id">hero-attr</mj-html-attribute>
-            </mj-selector>
-        </mj-html-attributes>
-
         <mj-style>
-            .grid-background > table > tbody > tr > td > table {
+             .grid-background > table > tbody > tr > td > table {
                 background-color: white;
                 border-radius: 15px;
             }
@@ -27,9 +20,8 @@
             <!-- element attributes: -->
             <mj-all font-family="system-ui, sans-serif" />
             <mj-body background-color="lightgrey" />
-            <!-- <mj-column background-color="white" /> -->
+            <mj-column background-color="white" />
             <!-- <mj-text font-family="Poppins, system-ui, sans-serif" /> -->
-            <!-- <mj-text font-family="system-ui, sans-serif" /> -->
             <mj-divider border-width="1px" border-color="lightgrey" />
             <mj-button background-color="#007c8a" border-radius="50px" />
             <mj-navbar-link color="#007c8a" text-transform="none" />
@@ -48,14 +40,12 @@
         </mj-raw>
     </mj-head>
     <mj-body>
-        <!-- mj-section needs padding: 0 -->
-
         <!-- navbar with icons -->
         <mj-section padding="0" background-color="white">
-            <mj-column width="50%" vertical-align="middle">
+            <mj-column vertical-align="middle">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="125px" alt="StudentUniverse" />
             </mj-column>
-            <mj-column width="50%" vertical-align="middle">
+            <mj-column vertical-align="middle">
                 <mj-navbar hamburger="hamburger" ico-color="#007c8a">
                     <mj-navbar-link href="#">link 1</mj-navbar-link>
                     <mj-navbar-link href="#">link 2</mj-navbar-link>
@@ -65,7 +55,7 @@
         </mj-section>
 
         <!-- header -->
-        <mj-section>
+        <mj-section padding="0">
             <mj-column>
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="160px" alt="StudentUniverse" />
             </mj-column>
@@ -73,28 +63,28 @@
 
         <!-- hero -->
         <mj-hero mode="fluid-height" background-url="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/homepage/promotion/feature_fiji-mar24-min992.jpg" background-color="teal" background-height="300px" background-width="300px" padding="50px 0px">
-            <mj-text align="center" font-size="56px" mj-class="white-text" css-class="hero-attr">
+            <mj-text align="center" font-size="56px" mj-class="white-text">
                 Lorem ipsum dolor
             </mj-text>
         </mj-hero>
         <mj-section padding="0 0 15px 0">
-            <mj-column>
+            <mj-column padding-top="15px">
                 <mj-text font-size="18px">Lorem ipsum dolor</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
-                <mj-button font-size="26px" padding="20px 10px 40px 10px" href="#">Sed tristique</mj-button>
+                <mj-button font-size="24px" padding="20px 10px 40px 10px" href="#">Sed tristique</mj-button>
             </mj-column>
         </mj-section>
 
         <!-- grid -->
         <mj-section padding="0">
-            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" fluid-on-mobile="true" />
                 <mj-text font-size="18px">Grid 1</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
-            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="BKK" fluid-on-mobile="true" />
                 <mj-text font-size="18px">Grid 2</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -104,14 +94,14 @@
         </mj-section>
 
         <mj-section padding="0">
-            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="CBR" fluid-on-mobile="true" />
                 <mj-text font-size="18px">Grid 3</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
-            <mj-column padding="0 10px 20px 10px"css-class="grid-background">
+            <mj-column padding="0 10px 20px 10px"css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="DUB" fluid-on-mobile="true" />
                 <mj-text font-size="18px">Grid 4</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -121,14 +111,14 @@
         </mj-section>
 
         <mj-section padding="0">
-            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="KEF" fluid-on-mobile="true" />
                 <mj-text font-size="18px">Grid 5</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
-            <mj-column padding="0 10px 20px 10px" css-class="grid-background">
+            <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="ISB" fluid-on-mobile="true" />
                 <mj-text font-size="18px">Grid 6</mj-text>
                 <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -260,7 +250,7 @@
                     <mj-social-element name="facebook" name="Facebook" href="#"></mj-social-element>
                     <mj-social-element name="x" name="X" href="#"></mj-social-element>
                     <mj-social-element name="instagram" name="Instagram" href="#"></mj-social-element>
-                    <mj-social-element href="url" background-color="#FF00FF" src="#">Optional label</mj-social-element>
+                    <mj-social-element href="#" background-color="#FF00FF" src="#">Optional label</mj-social-element>
                 </mj-social>
                 <mj-text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
             </mj-column>
