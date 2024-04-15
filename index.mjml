@@ -90,7 +90,7 @@
 
         <!-- grid -->
         <mj-section padding="0">
-            <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
+            <mj-column padding="0 15px 20px 15px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" fluid-on-mobile="true" />
                 <mj-text mj-class="h3">Grid 1</mj-text>
                 <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
@@ -141,7 +141,7 @@
         </mj-section>
 
         <!-- callout columns -->
-        <mj-section background-color="#ff00a6" border-radius="15px">
+        <mj-section background-color="white" border-radius="15px" padding-bottom="20px">
             <mj-column background-color="transparent">
                 <mj-image src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" alt="Virgin Atlantic" width="200px"></mj-image>
             </mj-column>
@@ -210,13 +210,13 @@
             <mj-column padding="20px 0 25px 0">
                 <mj-text mj-class="h3" align="center">Lorem ipsum dolor</mj-text>
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
-                <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
+                <mj-text line-height="20px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
             </mj-column>
         </mj-section>
 
