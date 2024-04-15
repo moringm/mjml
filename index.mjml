@@ -8,6 +8,13 @@
                 background-color: white;
                 border-radius: 15px;
             }
+            .app-promo {
+                text-align: center;
+            }
+            .footer-link a {
+                color: #007c8a;
+                font-weight: bold;
+            }
         </mj-style>
 
         <!-- custom font -->
@@ -26,12 +33,19 @@
             <mj-button background-color="#007c8a" border-radius="50px" />
             <mj-navbar-link color="#007c8a" text-transform="none" />
             <mj-accordion border="none" padding="1px" />
-            <mj-accordion-element icon-wrapped-url="https://upload.wikimedia.org/wikipedia/commons/3/3a/Up_arrow.gif" icon-unwrapped-url="https://upload.wikimedia.org/wikipedia/commons/d/db/Vector_down_arrow_link.svg" icon-height="24px" icon-width="24px" />
+            <mj-accordion-element icon-wrapped-url="images/icon-up.png" icon-unwrapped-url="images/icon-down.png" icon-height="16px" icon-width="16px" />
             <mj-accordion-title padding="25px" font-size="16px" />
-            <mj-accordion-text background-color="#007c8a" padding="25px" color="white" />
+            <mj-accordion-text background-color="#eaf7f8" padding="25px" color="#007c8a" />
 
             <!-- classes: -->
+            <mj-class name="h1" font-size="36px" line-height="44px" color="#007c8a" font-weight="bold" />
+            <mj-class name="h2" font-size="24px" line-height="30px" color="#007c8a" font-weight="bold" />
+            <mj-class name="h3" font-size="20px" line-height="24px" color="#007c8a" font-weight="bold" />
+            <mj-class name="body-text" font-size="16px" line-height="20px" />
+            <mj-class name="fineprint" font-size="12px" line-height="20px" color="#666" />
+            <mj-class name="footer-text" font-size="12px" line-height="20px" color="#007c8a" align="center" />
             <mj-class name="white-text" color="white" />
+            <mj-class name="reverse-button" background-color="white" color="#007c8a" />
         </mj-attributes>
         <mj-raw>
             <!-- attempt a dark mode theme -->
@@ -46,11 +60,10 @@
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="125px" alt="StudentUniverse" />
             </mj-column>
             <mj-column vertical-align="middle">
-                <mj-navbar hamburger="hamburger" ico-color="#007c8a">
-                    <mj-navbar-link href="#">link 1</mj-navbar-link>
-                    <mj-navbar-link href="#">link 2</mj-navbar-link>
-                    <mj-navbar-link href="#">link 3</mj-navbar-link>
-                    <mj-navbar-link href="#">link 4</mj-navbar-link>
+                <mj-navbar hamburger="hamburger">
+                    <mj-navbar-link href="#" padding="15px 10px 10px 10px"><img src="images/icon-flights.png" /></mj-navbar-link>
+                    <mj-navbar-link href="#" padding="15px 10px 10px 10px"><img src="images/icon-hotels.png" /></mj-navbar-link>
+                    <mj-navbar-link href="#" padding="15px 10px 10px 10px"><img src="images/icon-cars.png" /></mj-navbar-link>
             </mj-column>
         </mj-section>
 
@@ -69,8 +82,8 @@
         </mj-hero>
         <mj-section padding="0 0 15px 0">
             <mj-column padding-top="15px">
-                <mj-text font-size="18px">Lorem ipsum dolor</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text align="center" mj-class="h1">Lorem ipsum dolor</mj-text>
+                <mj-text align="center" padding-left="15%" padding-right="15%" mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget nibh sed tortor pellentesque vulputate. Vestibulum sed odio sed orci eleifend viverra. Fusce in eleifend purus.</mj-text>
                 <mj-button font-size="24px" padding="20px 10px 40px 10px" href="#">Sed tristique</mj-button>
             </mj-column>
         </mj-section>
@@ -79,15 +92,15 @@
         <mj-section padding="0">
             <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="SFO" fluid-on-mobile="true" />
-                <mj-text font-size="18px">Grid 1</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text mj-class="h3">Grid 1</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
             <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="BKK" fluid-on-mobile="true" />
-                <mj-text font-size="18px">Grid 2</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text mj-class="h3">Grid 2</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
@@ -96,15 +109,15 @@
         <mj-section padding="0">
             <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="CBR" fluid-on-mobile="true" />
-                <mj-text font-size="18px">Grid 3</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text mj-class="h3">Grid 3</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
             <mj-column padding="0 10px 20px 10px"css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/DUB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="DUB" fluid-on-mobile="true" />
-                <mj-text font-size="18px">Grid 4</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text mj-class="h3">Grid 4</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
@@ -113,15 +126,15 @@
         <mj-section padding="0">
             <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/KEF.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="KEF" fluid-on-mobile="true" />
-                <mj-text font-size="18px">Grid 5</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text mj-class="h3">Grid 5</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
             <mj-column padding="0 10px 20px 10px" css-class="grid-background" background-color="transparent">
                 <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/ISB.jpg" border-radius="15px 15px 0 0" padding="0 0 15px 0" alt="ISB" fluid-on-mobile="true" />
-                <mj-text font-size="18px">Grid 6</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-text mj-class="h3">Grid 6</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
                 <mj-spacer height="20px" />
             </mj-column>
@@ -132,20 +145,20 @@
             <mj-column background-color="transparent">
                 <mj-image src="https://1000logos.net/wp-content/uploads/2020/04/Virgin-Atlantic-Logo.png" alt="Virgin Atlantic" width="200px"></mj-image>
             </mj-column>
-            <mj-column background-color="transparent" inner-background-color="yellow" padding="0">
-                <mj-text font-size="18px">Lorem ipsum</mj-text>
-                <mj-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+            <mj-column background-color="transparent" padding="0">
+                <mj-text mj-class="h3">Lorem ipsum</mj-text>
+                <mj-text mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
                 <mj-button href="#">Sed tristique</mj-button>
             </mj-column>
         </mj-section>
 
         <!-- secondary -->
-        <mj-section background-color="lightgreen" border-radius="15px">
-            <mj-column width="200px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/HKG.jpg" width="100px" />
-                <mj-text font-size="18px" align="center">Lorem ipsum dolor</mj-text>
-                <mj-text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
-                <mj-button href="#">Maecenas semper</mj-button>
+        <mj-section background-color="#007c8a" border-radius="15px">
+            <mj-column background-color="transparent">
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/HKG.jpg" />
+                <mj-text mj-class="h2 white-text" align="center" padding-left="20%" padding-right="15%">Lorem ipsum dolor</mj-text>
+                <mj-text mj-class="body-text white-text" align="center" padding-left="20%" padding-right="15%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
+                <mj-button mj-class="reverse-button" font-size="18px" href="#">Maecenas semper</mj-button>
             </mj-column>
         </mj-section>
 
@@ -159,8 +172,8 @@
         <mj-wrapper padding="15px" background-color="white" border-radius="15px">
             <mj-section padding="0 0 10px 0">
                 <mj-column background-color="transparent" padding="0">
-                    <mj-text font-size="18px">Trending for Thanksgiving</mj-text>
-                    <mj-text>Here's some roundtrip domestic flights other travelers are eyeing.</mj-text>
+                    <mj-text mj-class="h3">Trending for Thanksgiving</mj-text>
+                    <mj-text mj-class="body-text">Here's some roundtrip domestic flights other travelers are eyeing.</mj-text>
                 </mj-column>
             </mj-section>
             <mj-section padding="0">
@@ -195,7 +208,7 @@
         <!-- member perks -->
         <mj-section>
             <mj-column padding="20px 0 25px 0">
-                <mj-text font-size="18px" align="center" css-class="primary-text">Lorem ipsum dolor</mj-text>
+                <mj-text mj-class="h3" align="center">Lorem ipsum dolor</mj-text>
                 <mj-text font-size="16px">Nam sodales efficitur dapibus</mj-text>
                 <mj-text>Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 <mj-divider />
@@ -234,7 +247,7 @@
         <!-- carousel -->
         <mj-section>
             <mj-column>
-                <mj-carousel padding="15px" border-radius="15px" tb-border-radius="10px" tb-selected-border-color="lightgreen" tb-hover-border-color="pink" tb-border="4px solid yellow" left-icon="https://upload.wikimedia.org/wikipedia/commons/b/bd/Left_arrow_icon.svg" right-icon="https://upload.wikimedia.org/wikipedia/commons/3/39/Vector_right_arrow_link.svg">
+                <mj-carousel padding="15px" border-radius="15px" tb-border-radius="10px" tb-selected-border-color="lightgreen" tb-hover-border-color="pink" tb-border="4px solid yellow" left-icon="images/icon-back.png" right-icon="images/icon-next.png" icon-width="16px">
                     <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/SFO.jpg" alt="SFO" />
                     <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/BKK.jpg" alt="BKK" />
                     <mj-carousel-image src="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/destination-fares/image-cards/CBR.jpg" alt="CBR" />
@@ -243,18 +256,40 @@
         </mj-section>
 
         <!-- footer -->
-        <!-- get requirements from Doc -->
-        <mj-section padding="0">
-            <mj-column padding="20px 0 30px 0">
-                <mj-social>
-                    <mj-social-element name="facebook" name="Facebook" href="#"></mj-social-element>
-                    <mj-social-element name="x" name="X" href="#"></mj-social-element>
-                    <mj-social-element name="instagram" name="Instagram" href="#"></mj-social-element>
-                    <mj-social-element href="#" background-color="#FF00FF" src="#">Optional label</mj-social-element>
-                </mj-social>
-                <mj-text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mj-text>
-            </mj-column>
-        </mj-section>
+        <mj-wrapper padding="0">
+            <mj-section padding="0">
+                <mj-column padding="10px 0" background-color="transparent">
+                    <mj-text mj-class="fineprint">*All flight prices were current at the time this was published. Prices subject to availability and subject to change without notice. Prices are not guaranteed until StudentUniverse confirms your booking and payment is made in full. Merchant fees may be applicable. Flight prices vary by date, departure city, arrival city and availability. All taxes/fees are included in the price, except certain government taxes, change fees imposed in destination and airline baggage fees if applicable.</mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column padding="20px 0 10px 0" background-color="#eaf7f8">
+                    <mj-text mj-class="h3" align="center" padding="0">Stay Connected</mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0 10px" background-color="#eaf7f8" css-class="app-promo">
+                <mj-column vertical-align="middle" background-color="transparent">
+                    <mj-image src="images/icon-smartphone-footer.png" width="166px" height="26px" alt="Get the StudentUniverse App" href="#" />
+                </mj-column>
+                <mj-column vertical-align="middle" background-color="transparent">
+                    <mj-social>
+                        <mj-social-element href="#" src="images/social-instagram.png" name="Instagram" icon-size="36px" />
+                        <mj-social-element href="#" src="images/social-facebook.png" name="Facebook" icon-size="36px" />
+                        <mj-social-element href="#" src="images/social-tiktok.png" name="TikTok" icon-size="36px" />
+                        <mj-social-element href="#" src="images/social-x.png" name="X" icon-size="36px" />
+                    </mj-social>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column padding-bottom="20px" background-color="#eaf7f8">
+                    <mj-divider  />
+                    <mj-text mj-class="footer-text">This email was sent to matthew.moring@studentuniverse.com</mj-text>
+                    <mj-text mj-class="footer-text" css-class="footer-link"><a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a> | <a href="#">Help</a></mj-text>
+                    <mj-text mj-class="footer-text">Copyright © 1999–2024 StudentUniverse™. All rights reserved.</mj-text>
+                    <mj-text mj-class="footer-text">5 Paragon Drive, Suite 200, Montvale, NJ 07645</mj-text>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
 
     </mj-body>
 </mjml>
