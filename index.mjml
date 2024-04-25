@@ -59,7 +59,7 @@
         <!-- region navbar with icons -->
         <mj-section padding="0">
             <mj-column vertical-align="top" padding-top="2px">
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="160px" alt="StudentUniverse" />
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="160px" alt="StudentUniverse" href="#" />
             </mj-column>
             <mj-column vertical-align="middle">
                 <mj-navbar base-url="https://www.studentuniverse.com">
