@@ -1,0 +1,9 @@
+mjml --watch index.mjml -o index.html
+
+https://htmlemail.io/inline/
+
+{{content_blocks.${New_Navbar_With_Icons}}}
+
+{{content_blocks.${New_Header}}}
+
+{{content_blocks.${New_Footer}}}

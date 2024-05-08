@@ -3,7 +3,7 @@
         <mj-title>StudentUniverse: Title Here</mj-title>
         <mj-preview>THIS IS PREVIEW TEXT</mj-preview>
 
-        <mj-style>
+        <mj-style inline="inline">
             a {
                 color: #0072bc;
                 font-weight: bold;
@@ -73,7 +73,7 @@
         <!-- region header -->
         <mj-section padding="10px 0 15px 0">
             <mj-column>
-                <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="160px" alt="StudentUniverse" />
+                <mj-image src="https://images.studentuniverse.com/new/suwebui/elements/studentuniverse_logo.png" width="160px" alt="StudentUniverse" href="#" />
             </mj-column>
         </mj-section>
         <!-- endregion -->
@@ -81,11 +81,11 @@
         <!-- region hero -->
         <mj-wrapper padding="0 0 15px 0">
             <mj-hero mode="fluid-height" background-url="https://images.studentuniverse.com/new/suwebui/photos/marketing-us/homepage/promotion/feature_fiji-mar24-min992.jpg" background-color="#007c8a" background-height="300px" background-width="300px" padding="50px 0px">
-                <mj-text align="center" font-size="56px" mj-class="white-text">Lorem ipsum dolor</mj-text>
+                <mj-text align="center" font-size="56px" mj-class="white-text">1Lorem ipsum dolor</mj-text>
             </mj-hero>
             <mj-section padding="0 0 15px 0">
                 <mj-column padding-top="15px">
-                    <mj-text align="center" mj-class="h1">Lorem ipsum dolor</mj-text>
+                    <mj-text align="center" mj-class="h1">1Lorem ipsum dolor</mj-text>
                     <mj-text align="center" padding-left="15%" padding-right="15%" mj-class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget nibh sed tortor pellentesque vulputate. Vestibulum sed odio sed orci eleifend viverra. Fusce in eleifend purus.</mj-text>
                     <mj-button font-size="24px" padding="15px 10px 30px 10px" href="#">Sed tristique</mj-button>
                 </mj-column>
