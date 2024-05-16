@@ -1,0 +1,11 @@
+<mj-section padding="0">
+    <mj-column vertical-align="top" padding-top="2px">
+        <mj-image src="https://braze-images.com/appboy/communication/assets/image_assets/images/6644b3fa85f2d300630599e9/original.png?1715778554" width="160px" alt="StudentUniverse" href="#" />
+    </mj-column>
+    <mj-column vertical-align="middle">
+        <mj-navbar base-url="https://www.studentuniverse.com">
+            <mj-navbar-link href="#" padding="15px 10px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f83c55200593cb535/original.png?1715875423" width="20" height="20" alt="Flights" /></mj-navbar-link>
+            <mj-navbar-link href="#" padding="15px 10px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f41c222005ab8f50b/original.png?1715875423" width="20" height="20" alt="Hotels" /></mj-navbar-link>
+            <mj-navbar-link href="#" padding="15px 10px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5fbd39c90059bc2670/original.png?1715875423" width="20" height="20" alt="Cars" /></mj-navbar-link>
+    </mj-column>
+</mj-section>

@@ -1,7 +1,9 @@
 <mjml lang="en">
     <mj-head>
-        <mj-title>StudentUniverse: Title Here</mj-title>
-        <mj-preview>THIS IS PREVIEW TEXT</mj-preview>
+        <mj-preview>THIS IS PREVIEW TEXT
+            &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+            &nbsp;
+        </mj-preview>
 
         <mj-style>
             a {
@@ -59,25 +61,11 @@
 
     <mj-body>
         <!-- region navbar with icons -->
-        <mj-section padding="0">
-            <mj-column vertical-align="top" padding-top="2px">
-                <mj-image src="https://braze-images.com/appboy/communication/assets/image_assets/images/6644b3fa85f2d300630599e9/original.png?1715778554" width="160px" alt="StudentUniverse" href="#" />
-            </mj-column>
-            <mj-column vertical-align="middle">
-                <mj-navbar base-url="https://www.studentuniverse.com">
-                    <mj-navbar-link href="#" padding="15px 10px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f83c55200593cb535/original.png?1715875423" width="20" height="20" alt="Flights" /></mj-navbar-link>
-                    <mj-navbar-link href="#" padding="15px 10px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f41c222005ab8f50b/original.png?1715875423" width="20" height="20" alt="Hotels" /></mj-navbar-link>
-                    <mj-navbar-link href="#" padding="15px 10px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5fbd39c90059bc2670/original.png?1715875423" width="20" height="20" alt="Cars" /></mj-navbar-link>
-            </mj-column>
-        </mj-section>
+        <mj-include path="./navbarWithIcons.mjml" />
         <!-- endregion -->
 
         <!-- region header -->
-        <mj-section padding="10px 0 15px 0">
-            <mj-column>
-                <mj-image src="https://braze-images.com/appboy/communication/assets/image_assets/images/6644b3fa85f2d300630599e9/original.png?1715778554" width="160px" alt="StudentUniverse" href="#" />
-            </mj-column>
-        </mj-section>
+        <mj-include path="./header.mjml" />
         <!-- endregion -->
 
         <!-- region hero -->
@@ -258,35 +246,7 @@
         <!-- endregion -->
 
         <!-- region footer -->
-        <mj-wrapper padding="0">
-            <mj-section padding="0">
-                <mj-column padding="30px 0 15px 0" background-color="#eaf7f8">
-                    <mj-text mj-class="h3" align="center" padding="0">Stay Connected</mj-text>
-                </mj-column>
-            </mj-section>
-            <mj-section padding="0 10px" background-color="#eaf7f8">
-                <mj-column vertical-align="middle">
-                    <mj-image src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f1fc12f005818262d/original.png?1715875423" width="166px" height="26px" alt="Get the StudentUniverse App" href="#" />
-                </mj-column>
-                <mj-column vertical-align="middle">
-                    <mj-social>
-                        <mj-social-element href="https://www.instagram.com/studentuniverse" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f4a9c940059577b89/original.png?1715875422" alt="Instagram" name="Instagram" icon-size="36px" />
-                        <mj-social-element href="https://www.facebook.com/studentuniverse" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5f2f33f50058c950a6/original.png?1715875422" alt="Facebook" name="Facebook" icon-size="36px" />
-                        <mj-social-element href="https://www.tiktok.com/@studentuniverse" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5faf3fe9005847fac0/original.png?1715875422" alt="TikTok" name="TikTok" icon-size="36px" />
-                        <mj-social-element href="https://www.x.com/studentuniverse" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66462e5fb7580e00593d3c0e/original.png?1715875422" alt="X" name="X" icon-size="36px" />
-                    </mj-social>
-                </mj-column>
-            </mj-section>
-            <mj-section padding="0">
-                <mj-column padding-bottom="30px" background-color="#eaf7f8">
-                    <mj-divider />
-                    <mj-text mj-class="footer-text">This email was sent to matthew.moring@studentuniverse.com</mj-text>
-                    <mj-text mj-class="footer-text" css-class="footer-link"><a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a> | <a href="#">Help</a></mj-text>
-                    <mj-text mj-class="footer-text">Copyright &copy; 1999–2024 StudentUniverse™. All rights reserved.</mj-text>
-                    <mj-text mj-class="footer-text">5 Paragon Drive, Suite 200, Montvale, NJ 07645</mj-text>
-                </mj-column>
-            </mj-section>
-        </mj-wrapper>
+        <mj-include path="./footer.mjml" />
         <!-- endregion -->
 
     </mj-body>
