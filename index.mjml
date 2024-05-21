@@ -212,21 +212,21 @@
             </mj-section>
             <mj-section padding="0 20px">
                 <mj-column padding="10px 0" css-class="nested-border">
-                    <mj-text mj-class="h3" padding-top="15px"><img src="images/perks-icon-seats.png" height="16" width="16" /> Nam sodales efficitur dapibus</mj-text>
+                    <mj-text mj-class="h3" padding-top="15px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/664ca7b8428a42005824c0e1/original.png?1716299704" height="16" width="16" /> Nam sodales efficitur dapibus</mj-text>
                     <mj-divider />
                     <mj-text mj-class="body-text" padding-bottom="15px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 </mj-column>
             </mj-section>
             <mj-section padding="0 20px">
                 <mj-column padding="10px 0" css-class="nested-border">
-                    <mj-text mj-class="h3" padding-top="15px"><img src="images/perks-icon-baggage.png" height="16" width="16" /> Nam sodales efficitur dapibus</mj-text>
+                    <mj-text mj-class="h3" padding-top="15px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/664ca7b8f729c80059a6024d/original.png?1716299704" height="16" width="16" /> Nam sodales efficitur dapibus</mj-text>
                     <mj-divider />
                     <mj-text mj-class="body-text" padding-bottom="15px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 </mj-column>
             </mj-section>
             <mj-section padding="0 20px">
                 <mj-column padding="10px 0" css-class="nested-border">
-                    <mj-text mj-class="h3" padding-top="15px"><img src="images/perks-icon-insurance.png" height="16" width="16" /> Nam sodales efficitur dapibus</mj-text>
+                    <mj-text mj-class="h3" padding-top="15px"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/664ca7b82946d000599eb3db/original.png?1716299704" height="16" width="16" /> Nam sodales efficitur dapibus</mj-text>
                     <mj-divider />
                     <mj-text mj-class="body-text" padding-bottom="15px">Vestibulum ullamcorper libero eget felis egestas mattis. Proin facilisis ornare posuere.</mj-text>
                 </mj-column>
