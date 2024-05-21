@@ -66,11 +66,11 @@
     <mj-body>
         <!-- region navbar with icons -->
         <mj-include path="./navbarWithIcons.mjml" />
-        <!-- endregion -->
+        <!-- end navbar with icons -->
 
         <!-- region header -->
         <mj-include path="./header.mjml" />
-        <!-- endregion -->
+        <!-- end header -->
 
         <!-- region hero -->
         <mj-wrapper padding="0 0 15px 0">
@@ -85,7 +85,7 @@
                 </mj-column>
             </mj-section>
         </mj-wrapper>
-        <!-- endregion -->
+        <!-- end hero -->
 
         <!-- region grid -->
         <mj-section padding="0">
@@ -138,7 +138,7 @@
                 <mj-spacer height="20px" />
             </mj-column>
         </mj-section>
-        <!-- endregion -->
+        <!-- end grid -->
 
         <!-- region callout columns -->
         <mj-wrapper padding="0 15px 15px 15px">
@@ -153,7 +153,7 @@
                 </mj-column>
             </mj-section>
         </mj-wrapper>
-        <!-- endregion -->
+        <!-- end callout columns -->
 
         <!-- region secondary -->
         <mj-wrapper padding="0 15px 15px 15px">
@@ -166,7 +166,7 @@
                 </mj-column>
             </mj-section>
         </mj-wrapper>
-        <!-- endregion -->
+        <!-- end secondary -->
 
         <!-- region pricepoint rows -->
         <mj-wrapper padding="0 15px 15px 15px">
@@ -201,7 +201,7 @@
                 </mj-column>
             </mj-section>
         </mj-wrapper>
-        <!-- endregion -->
+        <!-- end pricepoint rows -->
 
         <!-- region member perks -->
         <mj-wrapper padding="0 0 15px 0" background-color="#eaf7f8">
@@ -237,7 +237,7 @@
                 </mj-column>
             </mj-section>
         </mj-wrapper>
-        <!-- endregion -->
+        <!-- end member perks -->
 
         <!-- region fineprint -->
         <mj-wrapper padding="0">
@@ -247,11 +247,11 @@
                 </mj-column>
             </mj-section>
         </mj-wrapper>
-        <!-- endregion -->
+        <!-- end fineprint -->
 
         <!-- region footer -->
         <mj-include path="./footer.mjml" />
-        <!-- endregion -->
+        <!-- end footer -->
 
     </mj-body>
 </mjml>
